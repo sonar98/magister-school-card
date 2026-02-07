@@ -835,7 +835,7 @@ class MagisterSchoolCard extends LitElement {
             html`
               <div style="text-align: center; padding: 20px;">
                 <div style="font-size: 1.4em; font-weight: bold; color: var(--accent-color); margin-bottom: 8px;">
-                  ${this._data.volgende_afspraak.split('-').reverse().join('-')}
+                  ${this._data.volgende_afspraak}
                 </div>
                 ${this._data.volgende_vak ? html`
                   <div style="font-size: 1.1em; color: var(--primary-text-color); margin-bottom: 16px;">
