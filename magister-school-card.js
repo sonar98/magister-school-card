@@ -376,8 +376,8 @@ class MagisterSchoolCard extends LitElement {
     
     // Bepaal kindnaam op basis van entity naam
     const entityId = this.config.entity;
-    if (entityId.includes('tyas')) {
-      this._kindNaam = 'Tyas Brouwer';
+    if (entityId.includes('maurits')) {
+      this._kindNaam = 'Maurits van der Rijt';
     } else if (entityId.includes('overview')) {
       this._kindNaam = this._data.naam || 'Onbekend';
     } else {
