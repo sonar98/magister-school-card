@@ -749,7 +749,7 @@ class MagisterSchoolCard extends LitElement {
           ${absenties.length > 0 ? 
             absenties.slice(-3).map(absentie => html`
               <div class="afspraak-item">
-                <div><strong>${absentie.start?.substr(0, 10)}</strong></div>
+                <div><strong>${absentie.start?.substr(0, 10).split('-').reverse().join('-')}</strong></div>
                 <div>${absentie.omschrijving}</div>
                 ${absentie.afspraak ? html`<div class="tijd">${absentie.afspraak}</div>` : ''}
               </div>
@@ -835,7 +835,7 @@ class MagisterSchoolCard extends LitElement {
             html`
               <div style="text-align: center; padding: 20px;">
                 <div style="font-size: 1.4em; font-weight: bold; color: var(--accent-color); margin-bottom: 8px;">
-                  ${this._data.volgende_afspraak}
+                  ${this._data.volgende_afspraak.split('-').reverse().join('-')}
                 </div>
                 ${this._data.volgende_vak ? html`
                   <div style="font-size: 1.1em; color: var(--primary-text-color); margin-bottom: 16px;">
