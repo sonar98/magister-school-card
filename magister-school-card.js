@@ -682,7 +682,7 @@ class MagisterSchoolCard extends LitElement {
                     <span class="waarde">${cijfer.waarde ?? ''}</span>
                   </div>
                   <div class="tijd">
-                    ${cijfer.omschrijving || ''}${cijfer.ingevoerd_op ? ` - ${String(cijfer.ingevoerd_op).substr(0, 10)}` : ''}
+                    ${cijfer.omschrijving || ''}${cijfer.ingevoerd_op ? ` - ${String(cijfer.ingevoerd_op).substr(0, 10).split('-').reverse().join('-')}` : ''}
                   </div>
                 </div>
               `)
